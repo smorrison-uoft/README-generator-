@@ -4,11 +4,12 @@ const path= require ("path");
 const generateMarkdown = require("./generateMarkdown");
 const Choices = require("inquirer/lib/objects/choices");
 
+
 // array of questions for user
 const questions = [
     {
         type: "input",
-        name: "projectname",
+        name: "projectName",
         message: "What is the name of your project"
     
     },{
@@ -22,46 +23,46 @@ const questions = [
     },{
 
         type: "input",
-        name: "How to use",
+        name: "Useage",
         message: "Instructions on how to use"
     },{
 
         type: "list",
-        name: "Licence name",
+        name: "LicenceName",
         choices: ['Apache 2.0' , 'MIT' , 'GNU'],
     
     },{
 
         type: "input",
-        name: "github username",
+        name: "githubUsername",
         message: "What is your github username?"
         
     },{
 
         type: "input",
-        name: "email address",
+        name: "emailAddress",
         message: "What is your email address?"
 
     },
     {
         name: "contributors",
-        message: "List any contributors: ",
+        message: "Contributors",
         default: "None"
     },
     {
         name: "tests",
-        message: "Explain how to run testing: ", 
+        message: "Any current tests? ", 
         default: "Currently no tests are available."
     }, 
     {
         name: "questions",
-        message: "Remaining questions: ",
+        message: "Any more questions",
         default: "None"
 
     }, 
     {
-        name: "input",
-        message: "Readme generated",
+        name: "readme",
+        message: "Readme Generated",
         default: "Success!" 
         
     
@@ -78,7 +79,7 @@ function writeToFile(fileName, data) {
   // function to initialize program
   function init() {
       inquirer.prompt(questions).then(function(answers){
-        writeToFile("README.MD",generateMarkdown(answers))
+        writeToFile("readme.md",generateMarkdown(answers))
       })
 
       
