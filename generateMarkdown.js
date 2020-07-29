@@ -1,10 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  console.log(data);
-    return 
-}
-console.log("projectName")
-`#${data.projectName}
+console.log(data);
+  return `#${data.projectName}
 
 # Table of Contents
 
@@ -42,10 +39,11 @@ console.log("projectName")
   
   - [Github Profile] (https://github.com/${data.githubUsername})
 
-For additional questions please reach out to my email at: ${data.emailAddress}`;
+For additional questions please reach out to my email at: ${data.emailAddress}
+`;
+}
 
-{
-  
+
+
   module.exports = generateMarkdown;
 
-}
