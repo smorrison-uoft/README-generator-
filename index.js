@@ -28,7 +28,7 @@ const questions = [
     },{
 
         type: "list",
-        name: "LicenceName",
+        name: "LicenseName",
         choices: ['Apache 2.0' , 'MIT' , 'GNU'],
     
     },{
@@ -78,8 +78,9 @@ function writeToFile(fileName, data) {
   
   // function to initialize program
   function init() {
-      inquirer.prompt(questions).then(function(answers){
-        writeToFile("readme.md",generateMarkdown(answers))
+      inquirer.prompt(questions).then((answers)=>{
+          console.log("generating README...")
+        writeToFile("readme.md",generateMarkdown({answers}))
       })
 
       
