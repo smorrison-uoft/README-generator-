@@ -1,20 +1,11 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
 console.log(data);
-  return `#${data.title}
+  return `#${data.projectName}
 ## README Generator By Steph Morrison
-# Table of Contents
-
--[projectInstructions] (#projectInstructions)
--[Usesage] (#Useage)
--[licenseName] (#licenceName)
--[githubUsername] (#githubUsername)
--[Contributors] (#Contributors)
--[Tests] (#Tests)
--[Questions] (#Questions)
 
 ##Description:
-![Licence] (https://img.shields.io/badge/License-${data.LicenseName}-blue.svg "license Badge)
+![Licence] (https://img.shields.io/badge/License-blue.svg "license Badge)
 
 ## Project Name:
   ${data.projectName}

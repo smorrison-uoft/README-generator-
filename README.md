@@ -1,20 +1,11 @@
 #undefined
 ## README Generator By Steph Morrison
-# Table of Contents
-
--[projectInstructions] (#projectInstructions)
--[Usesage] (#Useage)
--[licenseName] (#licenceName)
--[githubUsername] (#githubUsername)
--[Contributors] (#Contributors)
--[Tests] (#Tests)
--[Questions] (#Questions)
 
 ##Description:
-![Licence] (https://img.shields.io/badge/License-MIT-blue.svg "license Badge)
+![Licence] (https://img.shields.io/badge/License-blue.svg "license Badge)
 
 ## Project Name:
-  Good README Generator
+  Good README GENERATOR
 
 ## Author:
 Steph Morrison
@@ -23,7 +14,7 @@ Steph Morrison
 NPM  
 
 ## How to use:
-Follow my readme to create your own readme generator
+Simply follow this readme to create your own
 
 ## License Name: 
 MIT
@@ -32,7 +23,7 @@ MIT
 smorrison-uoft
 
 ## Email Address:  
-smorrison@gmail.com
+stephmorr.to@gmail.com
 
 ## Contributors: 
 none
