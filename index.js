@@ -44,26 +44,20 @@ const questions = [
         message: "What is your email address?"
 
     },
-    {
+    {   type: "input",
         name: "contributors",
         message: "Contributors",
-        default: "None"
+        
     },
-    {
+    {   type: "input",
         name: "tests",
         message: "Any current tests? ", 
-        default: "Currently no tests are available."
+        
     }, 
-    {
+    {   type: "input",
         name: "questions",
         message: "Any more questions",
-        default: "None"
-
-    }, 
-    {
-        name: "readme",
-        message: "Readme Generated",
-        default: "Success!" 
+        
         
     
     }
@@ -78,9 +72,9 @@ function writeToFile(fileName, data) {
   
   // function to initialize program
   function init() {
-      inquirer.prompt(questions).then((answers)=>{
-          console.log("README")
-        writeToFile("readme.md",generateMarkdown({answers}))
+      inquirer.prompt(questions).then(function(answers){
+          console.log("readme")
+        writeToFile("readme.md",generateMarkdown(answers))
       })
 
       
